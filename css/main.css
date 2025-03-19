@@ -81,7 +81,7 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("../img/ski.jpg");
+        background-image: url("../img/Ski.jpg"); 
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -236,7 +236,7 @@ body {
 }
 
 .divider-img {
-    background-image: url("../img/forest.jpg");
+    background-image: url("../img/Forest.jpg"); /* Ensure correct path */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
