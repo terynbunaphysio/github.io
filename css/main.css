@@ -4,7 +4,7 @@
     --col-grey: #F1F2EB;
     --col-green: #A4C2A5;
     --col-brown: #654C4F;
-    --col-red: #a93c36;
+    --col-red: #0b7992;
     --col-red-90: #a93c36ee;
     --col-red-80: #a93c36dd;
 }
@@ -261,7 +261,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    background-color: transparent;
+    background-color: #0b7992;
     top: 0;
     margin-top: -65px;
     position: sticky;
@@ -377,5 +377,31 @@ body {
         background-color: var(--col-green);
         opacity: 0.6;
         z-index: -1;
+    }
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--col-red);
+    z-index: 99;
+
+    > ul {
+        list-style-type: none;
+        margin-top: 60px;
+
+        > li > a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 10px 20px;
+        }
     }
 }

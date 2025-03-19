@@ -1,10 +1,6 @@
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+function handleMobileNav(isOpen) {
+    const mobileNav = document.getElementById("mobileNav");
+    mobileNav.style.display = isOpen ? "block": "none";
 }
 
 const updateYearsExperience = () => {
@@ -25,25 +21,25 @@ const updateYearsExperience = () => {
 document.addEventListener('DOMContentLoaded', () => {
     updateYearsExperience();
     
-    const nav = document.querySelector('.topnav');
-    const header = document.querySelector('.header');
+    // const nav = document.querySelector('.topnav');
+    // const header = document.querySelector('.header');
 
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(entry => {
-                if (entry.boundingClientRect.bottom < 100) {
-                    nav.classList.add('stuck');
-                } else {
-                    nav.classList.remove('stuck');
-                }
-            });
-        },
-        {
-            // Watch for when header moves out of viewport
-            threshold: [0],
-            rootMargin: '-50px'
-        }
-    );
+    // const observer = new IntersectionObserver(
+    //     (entries) => {
+    //         entries.forEach(entry => {
+    //             if (entry.boundingClientRect.bottom < 100) {
+    //                 nav.classList.add('stuck');
+    //             } else {
+    //                 nav.classList.remove('stuck');
+    //             }
+    //         });
+    //     },
+    //     {
+    //         // Watch for when header moves out of viewport
+    //         threshold: [0],
+    //         rootMargin: '-50px'
+    //     }
+    // );
 
-    observer.observe(header);
+    // observer.observe(header);
 });

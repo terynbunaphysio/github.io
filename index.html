@@ -37,11 +37,6 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Teryn Buna Physiotherapy</h1>
-        <p>This is a simple static website hosted on GitHub Pages.</p>
-        <button class="cta-btn large-btn">Book Now</button>  
-    </div>
     <div class="topnav" id="myTopnav">
         <a href="#home" class="">Teryn Buna Physiotherapy</a>
         <div>
@@ -51,10 +46,24 @@
             <a href="#about">
                 <button class="cta-btn">Book Now</button>
             </a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a class="icon" onclick="handleMobileNav(true)">
             <i class="fa fa-bars"></i>
             </a>
         </div>
+    </div>
+    <div class="header">
+        <h1>Teryn Buna Physiotherapy</h1>
+        <p>This is not a simple static website hosted on GitHub Pages.</p>
+        <a href ="https://terynbunaphysio.janeapp.com/#staff_member/1" class="cta-btn large-btn">Book Now</a>  
+    </div>
+
+    <div id="mobileNav" class="mobile-nav" onclick="handleMobileNav(false)">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
     </div>
 
     <div class="container" id="about">
