@@ -2,11 +2,13 @@
 :root {
     --col-white: #fff;
     --col-grey: #F1F2EB;
-    --col-green: #A4C2A5;
-    --col-brown: #654C4F;
+    --col-green: #d75697;
+    --col-green-30: #d7569600;
+    --col-brown: #0b7992bb;
     --col-red: #0b7992;
-    --col-red-90: #a93c36ee;
-    --col-red-80: #a93c36dd;
+    --col-red-90: #0b7992ee;
+    --col-red-80: #0b7992dd;
+    --col-pink: #d75697;
 }
 
 /* Animations */
@@ -79,7 +81,7 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("../img/mountains-3.jpg");
+        background-image: url("../img/ski.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -226,7 +228,7 @@ body {
 
 .divider {
     width: 100%;
-    height: 300px;
+    height: 250px;
     background: var(--col-green);
     display: flex;
     justify-content: center;
@@ -234,12 +236,13 @@ body {
 }
 
 .divider-img {
-    background-image: url("../img/mountains-2.jpg");
+    background-image: url("../img/forest.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: var(--col-green);
+    background-color: var(--col-green-30);
     background-blend-mode: overlay;
+    background-attachment: fixed;
 }
 
 .footer {
@@ -248,7 +251,7 @@ body {
     background: var(--col-brown);
 }
 .footer-top {
-    height: 250px;
+    height: 100px;
 }
 .footer-bottom {
     height: 60px;
